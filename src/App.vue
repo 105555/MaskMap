@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <asideMenu></asideMenu>
+    <maskMap></maskMap>
+    <lightBox></lightBox>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { mapActions } from "vuex";
+import asideMenu from "./components/asideMenu.vue";
+import lightBox from '@/components/lightBox'
+import maskMap from '@/components/maskMap'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    asideMenu,
+    lightBox,
+    maskMap,
+  },
+  methods: {
+    fetchData() {
+      this.fetchLocations();
+      this.fetchPharmacies();
+    },
+    ...mapActions(['fetchLocations', 'fetchPharmacies'])
+  },
+  mounted() {
+    this.fetchData();
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss" src="./style.scss"></style>
