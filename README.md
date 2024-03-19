@@ -1,4 +1,4 @@
-# mask-demo-app
+# Vuex-mask-demo
 
 ## Project setup
 ```
