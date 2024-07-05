@@ -10,7 +10,11 @@
     - assets # 圖片放置處
     - components # 畫面呈現處
     - store # vuex管理處
-
+## 技術棧
+-	前端：Vue 3、Vue Cli
+-	狀態管理：Vuex
+-	建構工具：Vue Cli
+  
 ## 環境建置
 - 初始需安裝環境
 ```
