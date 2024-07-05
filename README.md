@@ -1,5 +1,5 @@
 # 實時口罩量店家
-![Static Badge](https://img.shields.io/badge/Node-v16.20.2-blue) ![Static Badge](https://img.shields.io/badge/Vue-v3-blue) ![Static Badge](https://img.shields.io/badge/VueCliblue)
+![Static Badge](https://img.shields.io/badge/Node-v16.20.2-blue) ![Static Badge](https://img.shields.io/badge/Vue-v3-blue) ![Static Badge](https://img.shields.io/badge/VueCli-blue)
 
 ## 實作練習參考資訊
 - 重新認識 Vue.js: 008 天絕對看不完的Vue.js 書中的 Vuex 練習範例
